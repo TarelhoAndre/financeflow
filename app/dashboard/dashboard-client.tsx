@@ -236,7 +236,7 @@ export default function DashboardClient({
           </nav>
 
           <div className="mt-10 rounded-xl border border-white/10 bg-white/[0.03] p-4">
-            <p className="text-xs text-zinc-500">Conta conectada</p>
+            <p className="text-xs text-zinc-500">Conta conectada • v2</p>
 
             <p className="mt-1 truncate text-sm">
               {userEmail}
