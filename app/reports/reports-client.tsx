@@ -1,5 +1,6 @@
 "use client";
 
+import LogoutButton from "@/components/logout-button";
 import Link from "next/link";
 import {
   ReactNode,
@@ -332,6 +333,7 @@ export default function ReportsClient({
             <p className="mt-1 truncate text-sm">
               {userEmail}
             </p>
+            <LogoutButton />
           </div>
         </aside>
 

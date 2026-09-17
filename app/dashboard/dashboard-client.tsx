@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FormEvent, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "../../lib/supabase/client";
+import LogoutButton from "@/components/logout-button";
 
 type Category = {
   id: string;
@@ -240,6 +241,7 @@ export default function DashboardClient({
             <p className="mt-1 truncate text-sm">
               {userEmail}
             </p>
+            <LogoutButton />
           </div>
         </aside>
 
