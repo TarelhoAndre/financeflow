@@ -279,19 +279,19 @@ export default function TransactionsClient({
               Transações
             </SidebarLink>
 
-            <SidebarLink href="#">
+            <SidebarLink href="/categories">
               Categorias
             </SidebarLink>
 
-            <SidebarLink href="#">
+            <SidebarLink href="/budgets">
               Orçamentos
             </SidebarLink>
 
-            <SidebarLink href="#">
+            <SidebarLink href="/goals">
               Metas
             </SidebarLink>
 
-            <SidebarLink href="#">
+            <SidebarLink href="/reports">
               Relatórios
             </SidebarLink>
           </nav>
