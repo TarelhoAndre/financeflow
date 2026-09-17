@@ -279,64 +279,6 @@ export default function ReportsClient({
   return (
     <main className="min-h-screen bg-zinc-950 text-white">
       <div className="flex min-h-screen">
-        <aside className="hidden w-64 border-r border-white/10 p-6 lg:block">
-          <Link
-            href="/"
-            className="flex items-center gap-3"
-          >
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-400 font-bold text-zinc-950">
-              F
-            </div>
-
-            <span className="text-xl font-semibold">
-              Finance
-              <span className="text-cyan-400">
-                Flow
-              </span>
-            </span>
-          </Link>
-
-          <nav className="mt-10 space-y-2">
-            <SidebarLink href="/dashboard">
-              Dashboard
-            </SidebarLink>
-
-            <SidebarLink href="/transactions">
-              Transações
-            </SidebarLink>
-
-            <SidebarLink href="/categories">
-              Categorias
-            </SidebarLink>
-
-            <SidebarLink href="/budgets">
-              Orçamentos
-            </SidebarLink>
-
-            <SidebarLink href="/goals">
-              Metas
-            </SidebarLink>
-
-            <SidebarLink
-              href="/reports"
-              active
-            >
-              Relatórios
-            </SidebarLink>
-          </nav>
-
-          <div className="mt-10 rounded-xl border border-white/10 bg-white/[0.03] p-4">
-            <p className="text-xs text-zinc-500">
-              Conta conectada
-            </p>
-
-            <p className="mt-1 truncate text-sm">
-              {userEmail}
-            </p>
-            <LogoutButton />
-          </div>
-        </aside>
-
         <section className="min-w-0 flex-1">
           <header className="flex flex-col gap-4 border-b border-white/10 px-6 py-5 sm:flex-row sm:items-center sm:justify-between lg:px-8">
             <div>
