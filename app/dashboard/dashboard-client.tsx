@@ -209,12 +209,29 @@ export default function DashboardClient({
           </Link>
 
           <nav className="mt-10 space-y-2">
-            <MenuItem label="Dashboard" active />
-            <MenuItem label="Transações" />
-            <MenuItem label="Categorias" />
-            <MenuItem label="Orçamentos" />
-            <MenuItem label="Metas" />
-            <MenuItem label="Relatórios" />
+            <SidebarLink href="/dashboard" active>
+            Dashboard
+            </SidebarLink>
+
+            <SidebarLink href="/transactions">
+            Transações
+            </SidebarLink>
+
+            <SidebarLink href="/categories">
+            Categorias
+            </SidebarLink>
+
+            <SidebarLink href="#">
+            Orçamentos
+            </SidebarLink>
+
+            <SidebarLink href="#">
+            Metas
+            </SidebarLink>
+
+            <SidebarLink href="#">
+            Relatórios
+            </SidebarLink>
           </nav>
 
           <div className="mt-10 rounded-xl border border-white/10 bg-white/[0.03] p-4">
@@ -536,23 +553,26 @@ export default function DashboardClient({
   );
 }
 
-function MenuItem({
-  label,
+function SidebarLink({
+  href,
+  children,
   active = false,
 }: {
-  label: string;
+  href: string;
+  children: React.ReactNode;
   active?: boolean;
 }) {
   return (
-    <button
-      className={`w-full rounded-xl px-4 py-3 text-left text-sm transition ${
+    <Link
+      href={href}
+      className={`block rounded-xl px-4 py-3 text-sm transition ${
         active
           ? "bg-cyan-400/10 font-medium text-cyan-300"
           : "text-zinc-400 hover:bg-white/5 hover:text-white"
       }`}
     >
-      {label}
-    </button>
+      {children}
+    </Link>
   );
 }
 
